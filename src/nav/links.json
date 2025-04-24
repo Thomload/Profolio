@@ -1,0 +1,17 @@
+{
+    "links": 
+    [
+        {
+            "label": "Home",
+            "href": "/home"
+        },
+        {
+            "label": "Portofolios",
+            "href": "/portofolios"
+        },
+        {
+            "label": "Contact",
+            "href": "/contact"
+        }
+    ]
+}

@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import  Nav from "./nav/nav";
+import { Routes, Route} from "react-router-dom";
+
+import Home from "./routes/home";
+import Portofolios from "./routes/portofolios";
+import Contact from "./routes/contact";
+import * as data from "./nav/links.json";
+import{ JSX } from "react";
+
+const links = (data as any).links;
+
+const componentMap: Record<string, JSX.Element> = {
+  "/home": <Home />,
+  "/portofolios": <Portofolios />,
+  "/contact": <Contact />
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {links.map((link: { href: string }) => (
+          <Route key={link.href} path={link.href} element={componentMap[link.href]} />
+        ))}
+      </Routes>
     </>
-  )
+  );
 }
 
 export default App
