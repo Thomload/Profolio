@@ -2,7 +2,8 @@ import React from 'react'
 
 function Portofolios() {
   return (
-    <div>Portofolios funktioniert</div>
+    <div>
+    </div>
   )
 }
 
