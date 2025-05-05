@@ -1,9 +1,7 @@
-import React from 'react'
-
-function Pontact() {
+function Contact() {
   return (
     <div>Contact funktioniert</div>
   )
 }
 
-export default Pontact
+export default Contact

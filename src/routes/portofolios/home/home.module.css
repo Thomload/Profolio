@@ -1,0 +1,32 @@
+/* Custom styles for the Webchat */
+.bp-webchat {
+    background-color: #121212; /* Dark background */
+    color: white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+  }
+  
+  .bp-webchat .bp-chat {
+    background-color: #1e1e1e; /* Darker chat background */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .bp-webchat .bp-chat .bp-header {
+    background-color: #333; /* Dark header */
+  }
+  
+  .bp-webchat .bp-chat .bp-message {
+    background-color: #2c2c2c; /* Darker message bubble */
+    color: #ddd; /* Light message text */
+    border-radius: 10px;
+  }
+  
+  .bp-webchat .bp-chat .bp-send-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* You can customize more here */
+  
