@@ -1,13 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .navbar{
     width: 100%;
     height: 80px;
     background-color: gray;
     display: flex;
     align-items: center;
-}
-
-.logo-container {
-    margin-left: px;
 }
 
 .logo-container span {

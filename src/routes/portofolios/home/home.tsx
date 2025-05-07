@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./home.module.css";
 
 import {
   Webchat,
@@ -13,7 +12,7 @@ const clientId = "44a685b2-2150-44c8-9e6e-7ce1983c2e8f";
 // Define configuration with proper typing
 const configuration: Configuration = {
   color: "#000", // Customize color if necessary
-  botName: "Chatbot",
+    botName: "Chatbot",
 };
 
 const App: React.FC = () => {
