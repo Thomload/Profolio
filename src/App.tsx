@@ -2,7 +2,7 @@ import './App.css';
 import Nav from "./nav/nav";
 import { Routes, Route } from "react-router-dom";
 
-import Home from "./routes/portofolios/home/home";
+import Home from "./routes/home/home";
 import Contact from "./routes/contact";
 import Portofolios from "./routes/portofolios";
 
@@ -10,7 +10,7 @@ import Damiano from './routes/portofolios/damiano';
 import Marius from './routes/portofolios/marius';
 import Rafael from './routes/portofolios/rafael';
 import Thomas from './routes/portofolios/thomas';
-import Timon from './routes/portofolios/timon';
+import Timon from './routes/portofolios/timon/timon';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         <Route path="/portofolios/marius" element={<Marius />} />
         <Route path="/portofolios/rafael" element={<Rafael />} />
         <Route path="/portofolios/thomas" element={<Thomas />} />
-        <Route path="/portofolios/timon" element={<Timon />} />
+        <Route path="/portofolios/timon/timon" element={<Timon />} />
       </Routes>
     </>
   );

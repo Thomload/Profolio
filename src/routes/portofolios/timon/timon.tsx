@@ -3,14 +3,7 @@ import "./timon.css";
 import ThemeSwitcher from "./themeswitch"
 
 
-
-
-
-
-
-
-
-const Portfolio: React.FC = () => {
+const Timon: React.FC = () => {
   return (
     <div>
       <header className="header">
@@ -66,4 +59,4 @@ const Portfolio: React.FC = () => {
   );
 };
 
-export default Portfolio;
+export default Timon;
