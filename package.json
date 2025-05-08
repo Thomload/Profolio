@@ -6,11 +6,12 @@
   "homepage": "https://Thomload.github.io/Profolio",
   "scripts": {
     "dev": "vite",
+    "server": "npx tsx src/routes/contact/server.ts",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r github"
   },
   "dependencies": {
     "@botpress/webchat": "2.3",
