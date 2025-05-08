@@ -1,32 +1,25 @@
-/* Custom styles for the Webchat */
+/* home.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.chatWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .bp-webchat {
-    background-color: #121212; /* Dark background */
-    color: white; /* Text color */
-    font-family: 'Arial', sans-serif; /* Font style */
-  }
-  
-  .bp-webchat .bp-chat {
-    background-color: #1e1e1e; /* Darker chat background */
-    border-radius: 10px; /* Rounded corners */
-  }
-  
-  .bp-webchat .bp-chat .bp-header {
-    background-color: #333; /* Dark header */
-  }
-  
-  .bp-webchat .bp-chat .bp-message {
-    background-color: #2c2c2c; /* Darker message bubble */
-    color: #ddd; /* Light message text */
-    border-radius: 10px;
-  }
-  
-  .bp-webchat .bp-chat .bp-send-button {
-    background-color: #007bff; /* Blue button */
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* You can customize more here */
-  
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
