@@ -30,6 +30,7 @@ function Contact() {
     }
   };
   return (
+    <div className={styles.contact}>
     <div className={styles.contactField}>
       <h1 className={styles.contactTitle}>Kontakt</h1>
       <form className={styles.contactForm} onSubmit={sendEmail}>
@@ -50,6 +51,7 @@ function Contact() {
         ></textarea>
         <button type="submit">Senden</button>
       </form>
+    </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 .page {
-    background-color: #1e1e1e;
+   background: linear-gradient(to bottom right, black , gray);
     color: white;
     min-height: 100vh;
     padding: 2rem;
