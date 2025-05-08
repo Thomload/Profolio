@@ -10,13 +10,6 @@ const Timon: React.FC = () => {
     <div>
       <header className="header">
         <ThemeSwitcher/>
-        <nav>
-          <div>
-            <a href="#about">Über mich</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
-          </div>
-        </nav>
       </header>
 
       <section className="hero">
@@ -40,7 +33,7 @@ const Timon: React.FC = () => {
         <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
           <ProjectCard
             title="Cablex"
-            description="Bei Kunden probleme von Router/Kabel beheben"
+            description="Bei Kunden probleme von Router/Kabel"
             tags={["Kundensupport, Fiber, FTTH"]}
           />
           <ProjectCard
@@ -48,12 +41,9 @@ const Timon: React.FC = () => {
              description="Erlernen von verschiedenen Sprachen, im Team Projekte erstellen"
              tags={["Web", "Frontend", "Teamarbeit"]}
           />
-    </div>
+        </div>
         </ul>
       </section>
-      <footer className="footer">
-        <p>&copy;Timon</p>
-      </footer>
     </div>
   );
 };

@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, tags }) =
       }}
     >
       <div style={{ fontSize: "0.9em", color: "#666" }}>Projekt</div>
-      <h3 style={{ margin: "4px 0" }}>{title}</h3>
+      <h3 style={{ margin: "4px 0", color: "#333"}}>{title}</h3>
       <p style={{ fontSize: "0.95em", color: "#333" }}>{description}</p>
       <div style={{ marginTop: "8px", display: "flex", gap: "6px", flexWrap: "wrap" }}>
         {tags.map((tag) => (

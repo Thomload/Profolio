@@ -2,12 +2,14 @@
   --color-bg: #000000;
   --color-text: #ffffff;
   --color-primary: #007bff;
+  --color-inverse: #ffffff;
 }
 
 :root[data-theme='dark'] {
   --color-bg: #ffffff;
   --color-text: #000000;
   --color-primary: #0d6efd;
+  --color-inverse: #000000;
 }
 
 
@@ -18,10 +20,11 @@ body {
     line-height: 1.6;
     background-color: var(--color-bg);
     color: var(--color-text);
+  
   }
   
   .header {
-    background-color: rgb(134, 134, 134);
+    background-color: gray;
     color: white;
     padding: 1rem 2rem;
     justify-content: space-between;
@@ -54,7 +57,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
 
-    color: var(--color-text);
+   
   }
   
   .projects li {
@@ -89,14 +92,12 @@ body {
   }
   
   .footer {
-    background-color: #222;
-    color: var(--color-text);
+    background-color:var(--color-inverse);
+    color: var(--color-bg);
     text-align: center;
     padding: 2rem;
-    margin-top: 4rem;
+    margin-top: 100%;
   }
-
-  
   .theme-switcher {
     display: flex;
     gap: 8px;
