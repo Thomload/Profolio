@@ -40,12 +40,12 @@ const Timon: React.FC = () => {
         <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
           <ProjectCard
             title="Cablex"
-            description="Ein Projekt für ein internes Tool zur Kabelverwaltung."
-            tags={["Admin", "Datenbank", "React"]}
+            description="Bei Kunden probleme von Router/Kabel beheben"
+            tags={["Kundensupport, Fiber, FTTH"]}
           />
           <ProjectCard
              title="Codemix"
-             description="Eine Plattform für Code-Snippets und Entwickler-Kollaboration."
+             description="Erlernen von verschiedenen Sprachen, im Team Projekte erstellen"
              tags={["Web", "Frontend", "Teamarbeit"]}
           />
     </div>
