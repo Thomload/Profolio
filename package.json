@@ -6,8 +6,8 @@
   "homepage": "https://Thomload.github.io/Profolio",
   "scripts": {
     "dev": "vite",
-    "server": "npx tsx src/routes/contact/server.ts",
-    "build": "tsc -b && vite build",
+    "server": "tsx src/routes/contact/server.ts",
+    "build": "tsc -b && vite build", 
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
