@@ -1,16 +1,16 @@
-import './App.css';
+import "./App.css";
 import Nav from "./nav/nav";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./routes/home/home";
-import Contact from "./routes/contact";
-import Portofolios from "./routes/portofolios";
+import Contact from "./routes/contact/contact";
+import Portfolios from "./routes/portfolios";
 
-import Damiano from './routes/portofolios/damiano';
-import Marius from './routes/portofolios/marius';
-import Rafael from './routes/portofolios/rafael';
-import Thomas from './routes/portofolios/thomas';
-import Timon from './routes/portofolios/timon/timon';
+import Damiano from "./routes/portfolios/damiano";
+import Marius from "./routes/portfolios/marius";
+import Rafael from "./routes/portfolios/rafael";
+import Thomas from "./routes/portfolios/thomas";
+import Timon from "./routes/portfolios/timon/timon";
 
 function App() {
   return (
@@ -20,13 +20,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/portofolios" element={<Portofolios />} />
+        <Route path="/portfolios" element={<Portfolios />} />
 
-        <Route path="/portofolios/damiano" element={<Damiano />} />
-        <Route path="/portofolios/marius" element={<Marius />} />
-        <Route path="/portofolios/rafael" element={<Rafael />} />
-        <Route path="/portofolios/thomas" element={<Thomas />} />
-        <Route path="/portofolios/timon/timon" element={<Timon />} />
+        <Route path="/portfolios/damiano" element={<Damiano />} />
+        <Route path="/portfolios/marius" element={<Marius />} />
+        <Route path="/portfolios/rafael" element={<Rafael />} />
+        <Route path="/portfolios/thomas" element={<Thomas />} />
+        <Route path="/portfolios/timon/timon" element={<Timon />} />
       </Routes>
     </>
   );

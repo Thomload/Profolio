@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./home.module.css"
 
 import {
   Webchat,
@@ -21,7 +20,7 @@ const App: React.FC = () => {
   const client = getClient({ clientId });
 
   return (
-    <div style={{ width: '100%', height: '85vh', backgroundColor: '#121212' }}>
+    <div style={{ width: '100%', height: '85vh', backgroundColor: 'black' }}>
     <WebchatProvider client={client} configuration={configuration}>
       {/* Webchat will apply the .bp-webchat class internally, so your CSS will target it */}
       <Webchat />
