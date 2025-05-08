@@ -30,6 +30,15 @@ function Thomas() {
           >
             ThaiRestaurant Projekt ansehen
           </a>
+          <br />
+          <a
+            href="https://thomload.github.io/RezepteApp/"
+            className={styles.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Rezepte Projekt ansehen
+          </a>
         </p>
         <p className={styles.text}>
           <strong>Kontakt:</strong> <br />
