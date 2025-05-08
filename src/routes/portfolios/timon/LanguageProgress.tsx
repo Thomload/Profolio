@@ -2,8 +2,8 @@ import React from "react";
 
 type LanguageProgressProps = {
   language: string;
-  percentage: number; // prozent wert
-  description: string; // wie gut als Wort beschriebung
+  percentage: number; // prozent wert wie gut
+  description: string; // wie gut als Beschreibung
 };
 
 const LanguageProgress: React.FC<LanguageProgressProps> = ({
