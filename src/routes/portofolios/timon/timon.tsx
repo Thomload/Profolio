@@ -1,6 +1,8 @@
 import React from "react";
 import "./timon.css";
 import ThemeSwitcher from "./themeswitch"
+import LanguageProgress from "./LanguageProgress";
+import ProjectCard from "./ProjectCard"
 
 
 const Timon: React.FC = () => {
@@ -25,33 +27,30 @@ const Timon: React.FC = () => {
       <section id="about" className="section">
         <h2>Über mich</h2>
         <p>16 Jahre alt</p>
-        <p></p>
+        <div style={{ padding: "2rem", maxWidth: "800px" }}>
+          <LanguageProgress language="Deutsch" percentage={100} description="Muttersprache" />
+          <LanguageProgress language="Englisch" percentage={75} description="Fliessend" />
+          <LanguageProgress language="Französisch" percentage={40} description="Grundlagen"/>
+        </div>
       </section>
 
       <section id="projects" className="section">
         <h2>Projekte</h2>
         <ul className="projects">
-          <li>
-            <h3>Cablex</h3>
-            <p>bro ka </p>
-          </li>
-          <li>
-            <h3>Codemix</h3>
-            <p>weis selber nd</p>
-          </li>
+        <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
+          <ProjectCard
+            title="Cablex"
+            description="Ein Projekt für ein internes Tool zur Kabelverwaltung."
+            tags={["Admin", "Datenbank", "React"]}
+          />
+          <ProjectCard
+             title="Codemix"
+             description="Eine Plattform für Code-Snippets und Entwickler-Kollaboration."
+             tags={["Web", "Frontend", "Teamarbeit"]}
+          />
+    </div>
         </ul>
       </section>
-
-      <section id="contact" className="section">
-        <h2>Kontakt</h2>
-        <form className="contact-form">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="E-Mail" required />
-          <textarea placeholder="Nachricht" rows={5} required />
-          <button type="submit">Senden</button>
-        </form>
-      </section>
-
       <footer className="footer">
         <p>&copy;Timon</p>
       </footer>
