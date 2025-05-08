@@ -1,6 +1,6 @@
-import styles from "./portofolios.module.css";
+import styles from "./portfolios.module.css";
 import { Link } from "react-router-dom";
-import data from "./portofolios/links.json"; 
+import data from "./portfolios/links.json"; 
 
 type LinkType = {
   label: string;
@@ -9,7 +9,7 @@ type LinkType = {
 
 const links: LinkType[] = data.links;
 
-const Portofolios: React.FC = () => {
+const Portfolios: React.FC = () => {
   return (
     <div className={styles.page}>
     <div className={styles.cardGrid}>
@@ -25,4 +25,4 @@ const Portofolios: React.FC = () => {
   );
 };
 
-export default Portofolios;
+export default Portfolios;

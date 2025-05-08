@@ -3,23 +3,23 @@
     [
         {
             "label": "Damiano",
-            "href": "/portofolios/damiano"
+            "href": "/portfolios/damiano"
         },
         {
             "label": "Marius",
-            "href": "/portofolios/marius"
+            "href": "/portfolios/marius"
         },
         {
             "label": "Rafael",
-            "href": "/portofolios/rafael"
+            "href": "/portfolios/rafael"
         },
         {
             "label": "Thomas",
-            "href": "/portofolios/thomas"
+            "href": "/portfolios/thomas"
         },
         {
             "label": "Timon",
-            "href": "/portofolios/timon/timon"
+            "href": "/portfolios/timon/timon"
         }
     ]
 }
