@@ -20,6 +20,26 @@ function Thomas() {
           Ich war bisher in 2 Projekten und arbeite derzeit seit 2 Monaten im
           dritten.
         </p>
+        <strong>Projekte:</strong>
+        <p className={styles.projekte}>
+          <div className={styles.gali}>
+            <strong>GALILEO - Starters</strong>
+            <p className={styles.projektbeschr}>
+              Du entwickelst Fachwissen in Frontend (HTML, CSS, TypeScript,
+              Angular) und Backend (Java, SpringBoot) und lernst
+              Softwareentwicklung, Tools wie IDE und Git sowie die
+              Swisscom-Kultur kennen.
+            </p>
+          </div>
+          <br />
+          <div className={styles.first}>
+            <strong>First Steps 2024</strong>
+            <p className={styles.projektbeschr}>
+              In den First Steps lernst du Swisscom sowie deine Begleiterinnen
+              und Kolleginnen kennen – die ideale Vorbereitung für deine Lehre.
+            </p>
+          </div>
+        </p>
         <p className={styles.text}>
           <strong>Webseiten von mir:</strong> <br />
           <a
