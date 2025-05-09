@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
     <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+    <style>
+      #webchat .bpFab {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -13,7 +18,7 @@
     <script type="module" src="/src/main.tsx"></script>
     <script>
       window.botpress.on("webchat:ready", () => {
-        window.botpress.open();
+        window.botpress.hide();
       });
       window.botpress.init({
       "botId": "b8160c0b-2023-4e18-9fce-e20ac0a180c9",
