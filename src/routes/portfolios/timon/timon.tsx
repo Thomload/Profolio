@@ -10,23 +10,20 @@ const Timon: React.FC = () => {
     <div>
       <header className="header">
         <ThemeSwitcher/>
-        <nav>
-          <div>
-            <a href="#about">Über mich</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
-          </div>
-        </nav>
       </header>
 
       <section className="hero">
-        <h2>Timon Villiger</h2>
-        <p> text</p>
+        <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 1rem"}}>
+          
+          <h2>I'm Timon</h2>
+          <p>
+            Ich bin 16 Jahre alt und komme aus der Schweiz. In meiner Freizeit engagiere ich mich als Leiter bei der Jungwacht & Blauring Döttingen, spiele Volleyball und gehe gerne wandern. Zurzeit bin ich im ersten Lehrjahr meiner Ausbildung zum Plattformentwickler. Die Entwicklung von Programmen und das Einrichten von Netzwerken faszinieren mich besonders und bereiten mir viel Freude.
+          </p>
+        </div>
       </section>
 
       <section id="about" className="section">
-        <h2>Über mich</h2>
-        <p>16 Jahre alt</p>
+      <h2>Sprachen</h2>
         <div style={{ padding: "2rem", maxWidth: "800px" }}>
           <LanguageProgress language="Deutsch" percentage={100} description="Muttersprache" />
           <LanguageProgress language="Englisch" percentage={75} description="Fliessend" />
@@ -41,7 +38,7 @@ const Timon: React.FC = () => {
           <ProjectCard
             title="Cablex"
             description="Bei Kunden probleme von Router/Kabel beheben."
-            tags={["Kundensupport, Fiber, FTTH"]}
+            tags={["Kundensupport" , "Fiber", "FTTH"]}
           />
           <ProjectCard
              title="Codemix"
